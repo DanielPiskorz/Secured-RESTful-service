@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class Controller {
 	
-	@RequestMapping("public/{{stuff}}")
+	@RequestMapping("public/{stuff}")
 	public String getPublicData(@PathVariable String stuff){
 		return "Public stuff: " + stuff;
 	}
 	
-	@RequestMapping("private/{{stuff}}")
+	@RequestMapping("private/{stuff}")
 	public String getPrivateData(@PathVariable String stuff){
 		return "Private stuff: " + stuff;
 	}
