@@ -16,4 +16,9 @@ public class Controller {
 	public String getPrivateData(@PathVariable String stuff){
 		return "Private stuff: " + stuff;
 	}
+	
+	@RequestMapping("admin/{stuff}")
+	public String getAdminData(@PathVariable String stuff){
+		return "Admin stuff: " + stuff;
+	}
 }
